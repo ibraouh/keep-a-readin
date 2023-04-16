@@ -35,7 +35,7 @@ async function trending() {
 		</article>`;
 	}
 
-	document.getElementById("trending-books").innerHTML = article;
+	// document.getElementById("trending-books").innerHTML = article;
 }
 
 trending();

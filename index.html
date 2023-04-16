@@ -3,8 +3,9 @@
 <head>
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-	<script src="javascript/trending.js"></script> 
-	<script src="javascript/lookup.js"></script> 
+	<!-- <script src="js/trending.js"></script> 
+	<script src="js/lookup.js"></script>  -->
+	<script src="js/nyt_trending.js"></script> 
 	<title>Keep-a-Readin</title>
 </head>
 <body>
@@ -34,15 +35,17 @@
 	</div>
 
 	<main>
-		<h1>Trending New Books</h1>
+		<div class="nyt-title">
+			<img src="assets/nyt.png" width="50px">
+			<h1>NY Times Best Sellers</h1>
+		</div>
+		
 		<div id="trending-books"></div>	
 	</main>
 
 	<footer>
 		Made by Abe Raouh, 2023 &copy
 	</footer>
-
-	
 
 </body>
 </html>
