@@ -1,0 +1,182 @@
+/* General UI  --------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* * {
+	border: 1px solid black;
+} */
+
+html {
+	font-family: 'Cardo', serif;
+	background-color: rgb(229, 246, 248);
+	text-decoration: none;
+}
+
+.accent-color {
+	color: rgb(44, 120, 191);
+}
+
+/* Header -------------------------------------------------------------- */
+
+header {
+	height: 100px;
+}
+
+nav {
+	font-family: 'Inconsolata', monospace;
+	height: 100px;
+	float: right; 
+	width: 45%;
+	text-align: right;
+}
+
+#logo {
+	font-family: 'Reenie Beanie', cursive;
+	font-size: 45px;
+	margin-left: 10px;
+	margin-top: 20px;
+	float: left;
+	width: 40%;
+}
+
+.creds {
+	background-color: rgb(44, 120, 191);
+	border-radius: 60px;
+}
+
+.creds:hover {
+	background-color: rgb(33, 86, 135);
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	margin-top: 32px;
+}
+nav ul li a{
+	background-color: rgb(220, 126, 58);
+	color: rgb(208, 239, 229);
+	padding: 12px;
+	border-radius: 60px;
+}
+
+nav ul li {
+	display: inline;
+}
+
+nav ul li a:hover{
+	background-color:  rgb(183, 103, 46);
+}
+
+
+/* Form --------------------------------------------------------------- */
+
+input {
+	height: 30px;
+	width: 120px;
+}
+
+.lookup {
+	margin-right: 15px;
+}
+
+
+/* Announcement ------------------------------------------------------- */
+
+.announcement {
+	border: 2px solid black;
+	margin: 0px 20px;
+	padding: 0px 20px;
+	background-color: azure;
+}
+
+.announcement h1{
+	margin-top: 15px;
+}
+
+.announcement p {
+	font-family: 'Inconsolata', monospace;
+}
+
+/* Main --------------------------------------------------------------- */
+
+main {
+	margin: 30px 20px;
+}
+
+article * {
+	margin: 1px;
+}
+
+article {
+	padding: 10px;
+	background-color: rgb(242, 199, 167);
+	border-radius: 10px;
+	margin-bottom: 30px;
+	min-height: 175px;
+	border: 2px solid black;
+}
+
+.div1, .div2 {
+	padding: 5px;
+}
+
+.div1 {
+	float: left;
+	padding-right: 20px;
+}
+
+.div3 {
+	font-family: 'Inconsolata', monospace;
+	color: rgb(62, 61, 61);
+}
+
+.book-length {
+	font-family: 'Inconsolata', monospace;
+	color: rgb(104, 82, 9);
+}
+
+
+/* Search Page --------------------------------------------------------- */
+
+.return_button {
+	background-color: rgb(220, 126, 58);
+	color: rgb(208, 239, 229);
+	padding: 12px;
+	border-radius: 60px;
+	text-decoration: none;
+	font-family: 'Inconsolata', monospace;
+}
+
+.return_button:hover {
+	background-color: rgb(183, 103, 46);
+}
+
+#query {
+	color: rgb(220, 126, 58);
+
+}
+
+#query:hover {
+	text-decoration: underline;
+}
+
+input {
+	border-radius: 12px;
+	border: 1px solid black;
+}
+
+/* Footer --------------------------------------------------------- */
+
+footer {
+	border: 2px solid black;
+	margin: 0px 20px;
+	padding: 0px 20px;
+	background-color: azure;
+	padding: 20px;
+	text-align: right;
+	margin-bottom: 20px;
+	font-family: 'Inconsolata', monospace;
+}

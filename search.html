@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+	<script src="javascript/trending.js"></script> 
+	<script src="javascript/lookup.js"></script> 
+	<title>Keep-a-Readin</title>
+</head>
+<body>
+	<header>
+		<h2 id="logo"><span class="accent-color">Keep-a-Readin</span>.com</h2>
+		<nav>
+			<form name=lookup method=POST action="search.php">
+			<ul>
+				<input type="text" name="search" placeholder="  search">
+				<a onClick="return validate()"><img class="lookup" src="assets/lookup.svg" width="13px"></a>
+				<li><a>Sign in</a></li>
+				<li><a class="creds">Sign up</a></li>
+			</ul>
+			</form>
+		</nav>
+	</header>
+	
+	<main>
+		<a class="return_button" href="index.html">Back to Main</a>
+		<h1>Search results for: <span id="query">Searching ...</span></h1>
+		<div id="query-results"></div>
+	</main>
+
+	<footer>
+		Made by Abe Raouh, 2023 &copy
+	</footer>
+
+	<script>
+		query = "history of baseball"
+		lookup(query)
+	</script>
+
+</body>
+</html>
