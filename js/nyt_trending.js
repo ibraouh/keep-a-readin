@@ -18,14 +18,14 @@ function nyt_trending() {
     })
     .then((data) => {
       console.log("Success!");
-      print(data.results);
+      print_article(data.results);
     })
     .catch((err) => {
       console.error(err);
     });
 }
 
-function print(data) {
+function print_article(data) {
   article = "";
   len = Object.keys(data).length;
 
