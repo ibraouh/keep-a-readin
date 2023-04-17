@@ -47,7 +47,7 @@ function print_article(data) {
 					<h2 class="book-title">${title}</h3>
 					<h4  class="book-subtitle"><em>by</em> ${author}</h4>
 					<p class="book-author"><em>Published by</em> ${publisher}</p>
-					<p  class="book-length">isbns10: ${isbn10}</p>
+					<p  class="book-length"><em>isbns10:</em> ${isbn10}</p>
 				</div>  
 			
 				<div class="div3">
