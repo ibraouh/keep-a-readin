@@ -32,22 +32,21 @@ function print(data) {
   for (i = 0; i < 5; i++) {
     const book = data[i];
     let title = book.title.toLowerCase().replace(/['"]+/g, '');
-	title = title.charAt(0).toUpperCase()+ title.slice(1)
+	  title = title.charAt(0).toUpperCase()+ title.slice(1)
     let publisher = book.publisher; //book.volumeInfo.subtitle
     let author = book.author;
     let isbn10 = book.isbns[0].isbn10 //"100"; //book.volumeInfo.pageCount
     let description = book.description;
-    let img_src = "https://marketplace.canva.com/EAFA7N_NLQs/1/0/1003w/canva-cute-colorful-watercolor-simple-illustrated-young-adult-romance-book-cover-ooKN90UU-H0.jpg"; //book.volumeInfo.imageLinks.thumbnail
 
-    article += `<article href="https://google.com">
+    article += `<article>
 				<div class="div1">
-					<img class="book-img-small" src=../assets/best_books/best${i+1}.png width="100px">
+					<img class="book-img-small" src=/assets/best_books/best${i+1}.png width="100px">
 				</div>
 			
 				<div class="div2">
-					<h3 class="book-title">${title}</h3>
-					<p  class="book-subtitle"><em>by</em> ${author}</p>
-					<h4 class="book-author"><em>Published by</em> ${publisher}</h4>
+					<h2 class="book-title">${title}</h3>
+					<h4  class="book-subtitle"><em>by</em> ${author}</h4>
+					<p class="book-author"><em>Published by</em> ${publisher}</p>
 					<p  class="book-length">isbns10: ${isbn10}</p>
 				</div>  
 			
