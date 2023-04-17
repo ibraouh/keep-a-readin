@@ -18,14 +18,14 @@ function nyt_trending() {
     })
     .then((data) => {
       console.log("Success!");
-      print(data.results);
+      print_article(data.results);
     })
     .catch((err) => {
       console.error(err);
     });
 }
 
-function print(data) {
+function print_article(data) {
   article = "";
   len = Object.keys(data).length;
 
@@ -40,7 +40,7 @@ function print(data) {
 
     article += `<article>
 				<div class="div1">
-					<img class="book-img-small" src=/assets/best_books/best${i+1}.png width="100px">
+					<img class="book-img-small" src=../assets/best_books/best${i+1}.png width="100px">
 				</div>
 			
 				<div class="div2">
