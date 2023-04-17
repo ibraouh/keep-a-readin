@@ -40,7 +40,7 @@ function print_article(data) {
 
     article += `<article>
 				<div class="div1">
-					<img class="book-img-small" src=../assets/best_books/best${i+1}.png width="100px">
+					<img class="book-img-small" src=assets/best_books/best${i+1}.png width="100px">
 				</div>
 			
 				<div class="div2">
